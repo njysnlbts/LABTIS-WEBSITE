@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/1e/72/e1/1e72e177da44eac61f206607a320d927.png");
+  }
+  .name{
+    width: 90%;
+    margin: auto;
+  }
+  .webname{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 51, 117)
+  }
+  ul{
+    flex: 1;
+    text-align: left;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: x-large;
+    position: relative;
+  }
+  ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 0.5s;
+  }
+  ul li a:hover::after{
+    width: 100%;
+  }
+.container{
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #69c0d6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="name">
+      <div class="webname">
+          <h1>LabtisHTML</h1>
+          <ul>
+            <li>
+              <a href="home page.html">Home</a>
+              <a href="lessons list.html">Lessons</a>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Lesson 2: HTML Basic Examples</span></div>
+        <form action="#" style="font-family: sans-serif">
+            <p>In this chapter we will show some basic HTML examples.
+            <br><br>
+            Don't worry if we use tags you have not learned about yet.</p><br>
+            <h3>HTML Documents</h3><br>
+            <p>All HTML documents must start with a document type declaration: < !DOCTYPE html >.
+            <br><br>
+            The HTML document itself begins with < html ></html> and ends with < /html >.<br>
+            <br>  
+            The visible part of the HTML document is between < body > and < /body >.</p><br>
+            <h3>The < !DOCTYPE > Declaration</h3><br>
+            <p>The < !DOCTYPE > declaration represents the document type, and helps browsers to display web pages correctly.
+            <br><br>
+            It must only appear once, at the top of the page (before any HTML tags).
+            <br><br>  
+            The < !DOCTYPE > declaration is not case sensitive.
+            <br><br>  
+            The < !DOCTYPE > declaration for HTML5 is:</p><br>
+            <h3>HTML Headings</h3><br>
+            <p>HTML headings are defined with the < h1 > to < h6 > tags.
+            <br><br>  
+            < h1 > defines the most important heading. < h6 > defines the least important heading: </p><br>
+            <h3>HTML Paragraphs</h3><br>
+            <p>HTML paragraphs are defined with the < p > tag.</p><br>
+            <h3>HTML Links</h3><br>
+            <p>HTML links are defined with the < a > tag. The link's destination is specified in the href attribute. 
+            <br><br>  
+            Attributes are used to provide additional information about HTML elements.
+            <br><br>  
+            You will learn more about attributes in a later chapter.</p><br>
+            <h3>HTML Images</h3><br>
+            <p>HTML images are defined with the <img> tag.
+            <br><br>
+            The source file (src), alternative text (alt), width, and height are provided as attributes:</p><br>
+            <h3>How to View HTML Source</h3><br>
+            <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p><br>
+            <h4>View HTML Source Code:</h4><br>
+            <p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.</p><br>
+            <h4>Inspect an HTML Element:</h4><br>
+            <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+	        </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

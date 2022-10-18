@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/1e/72/e1/1e72e177da44eac61f206607a320d927.png");
+  }
+  .name{
+    width: 90%;
+    margin: auto;
+  }
+  .webname{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 51, 117)
+  }
+  ul{
+    flex: 1;
+    text-align: left;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: x-large;
+    position: relative;
+  }
+  ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 0.5s;
+  }
+  ul li a:hover::after{
+    width: 100%;
+  }
+.container{
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #69c0d6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="name">
+      <div class="webname">
+          <h1>LabtisHTML</h1>
+          <ul>
+            <li>
+              <a href="home page.html">Home</a>
+              <a href="lessons list.html">Lessons</a>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Lesson 1: HTML Editors</span></div>
+        <form action="#" style="font-family: sans-serif">
+            <p>A simple text editor is all you need to learn HTML.</p><br>
+            <h3>Learn HTML Using Notepad or TextEdit</h3><br>
+            <p>Web pages can be created and modified by using professional HTML editors. However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac). We believe that using a simple text editor is a good way to learn HTML. Follow the steps below to create your first web page with Notepad or TextEdit.</p><br>
+            <h3>Step 1: Open Notepad (PC)</h3><br>
+            <h4>Windows 8 or later:</h4><br>
+            <p>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.</p><br>
+            <h4>Windows 7 or earlier:</h4><br>
+            <p>Open Start > Programs > Accessories > Notepad      </p><br>
+            <h3>Step 1: Open TextEdit (Mac)</h3><br>
+            <p>Open Finder > Applications > TextEdit
+            <br>
+            Also change some preferences to get the application to save files correctly. In Preferences > Format > choose "Plain Text"
+            <br> 
+            Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".
+            <br>
+            Then open a new document to place the code.</p><br>
+            <h3>Step 2: Write Some HTML</h3><br>
+            <p>Write or copy the following HTML code into Notepad:</p>
+            <img src="https://www.w3schools.com/html/img_notepad.png"><br>
+            <h3>Step 3: Save the HTML Page</h3><br>
+            <p>Save the file on your computer. Select File > Save as in the Notepad menu.
+            <br>
+            Name the file "index.html" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</p><br>
+            <h3>Step 4: View the HTML Page in Your Browser</h3><br>
+            <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+	        </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
