@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/1e/72/e1/1e72e177da44eac61f206607a320d927.png");
+  }
+  .name{
+    width: 90%;
+    margin: auto;
+  }
+  .webname{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 51, 117)
+  }
+  ul{
+    flex: 1;
+    text-align: left;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: x-large;
+    position: relative;
+  }
+  ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 0.5s;
+  }
+  ul li a:hover::after{
+    width: 100%;
+  }
+.container{
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #69c0d6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="name">
+      <div class="webname">
+          <h1>LabtisHTML</h1>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+              <a href="lessons list.html">Lessons</a>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Lesson 8: How To Add CSS</span></div>
+        <form action="#" style="font-family: sans-serif">
+          <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p><br>
+          <h3>Three Ways to Insert CSS</h3><br>
+          <p>There are three ways of inserting a style sheet:
+          <br><br>  
+          1. External CSS
+          <br><br>
+          2. Internal CSS
+          <br><br>
+          3. Inline CSS</p><br>
+          <h3>External CSS</h3><br>
+          <p>With an external style sheet, you can change the look of an entire website by changing just one file!
+          <br><br>
+          Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</p><br>
+          <h4>Example</h4><br>
+          <p>External styles are defined within the < link > element, inside the < head > section of an HTML page.
+          <br><br>  
+          An external style sheet can be written in any text editor, and must be saved with a .css extension.
+          <br><br>
+          The external .css file should not contain any HTML tags.</p><br>
+          <h3>Internal CSS</h3><br>
+          <p>
+          An internal style sheet may be used if one single HTML page has a unique style.
+          <br><br>
+          The internal style is defined inside the < style > element, inside the head section.</p><br>
+          <h4>Example</h4><br>
+          <p>Internal styles are defined within the < style > element, inside the < head > section of an HTML page.</p><br>
+          <h3>Inline CSS</h3><br>
+          <p>An inline style may be used to apply a unique style for a single element.
+          <br><br>
+          To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p><br>
+          <h4>Example</h4><br>
+          <p>Inline styles are defined within the "style" attribute of the relevant element.
+          <br><br>
+          <strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</p><br>
+          <h3>Multiple Style Sheets</h3><br>
+          <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+          <br><br>
+          Assume that an <strong>external style sheet</strong> has the following style for the < h1 > element.
+          <br><br>
+          Then, assume that an <strong>internal style sheet</strong> also has the following style for the < h1 > element.</p><br>
+          <h4>Example</h4><br>
+          <p>If the internal style is defined after the link to the external style sheet, the < h1 > elements will be "orange".</p><br>
+          <h4>Example</h4><br>
+          <p>However, if the internal style is defined before the link to the external style sheet, the < h1 > elements will be "navy".</p><br>
+          <h3>Cascading Order</h3><br>
+          <p>What style will be used when there is more than one style specified for an HTML element?
+          <br><br>
+          All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+          <br><br>
+          1. Inline style (inside an HTML element)
+          <br><br>
+          2. External and internal style sheets (in the head section)
+          <br><br>
+          3. Browser default
+          <br><br>
+          So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+          </p>
+	        </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

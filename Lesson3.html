@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/1e/72/e1/1e72e177da44eac61f206607a320d927.png");
+  }
+  .name{
+    width: 90%;
+    margin: auto;
+  }
+  .webname{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 51, 117)
+  }
+  ul{
+    flex: 1;
+    text-align: left;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: x-large;
+    position: relative;
+  }
+  ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 0.5s;
+  }
+  ul li a:hover::after{
+    width: 100%;
+  }
+.container{
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #69c0d6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="name">
+      <div class="webname">
+          <h1>LabtisHTML</h1>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+              <a href="lessons list.html">Lessons</a>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Lesson 3: HTML Elements</span></div>
+        <form action="#" style="font-family: sans-serif">
+          <p>An HTML element is defined by a start tag, some content, and an end tag. The HTML element is everything from the start tag to the end tag:
+          <br><br>
+          < tagname > Content goes here...< /tagname >
+          Examples of some HTML elements:
+            
+          < h1 >My First Heading< /h1 >
+          < p >My first paragraph.< /p ></p><br>
+          <h3>Nested HTML Elements</h3><br>
+          <p>HTML elements can be nested (this means that elements can contain other elements).
+          <br><br>
+          All HTML documents consist of nested HTML elements.
+          <br><br>  
+          The following example contains four HTML elements (< html >, < body >, < h1 > and < p >)</p><br>
+          <h3>Example Explained</h3><br>
+          <p>The <html> element is the root element and it defines the whole HTML document.
+          <br><br>
+          It has a start tag < html > and an end tag < /html >.
+          <br><br>  
+          Then, inside the < html > element there is a < body > element. 
+          <br><br>
+          The < body > element defines the document's body.
+          <br><br>
+          It has a start tag < body > and an end tag < /body >.
+          <br><br>  
+          Then, inside the < body > element there are two other elements: < h1 > and < p >. 
+          <br><br>
+          The < h1 > element defines a heading.
+          <br><br>
+          It has a start tag < h1 > and an end tag < /h1 >. 
+          <br><br>
+          The < p > element defines a paragraph.
+          <br><br>
+          It has a start tag < p > and an end tag < /p ></p><br>
+          <h3>Never Skip the End Tag</h3><br>
+          <p>Some HTML elements will display correctly, even if you forget the end tag.</p><br>
+          <h4>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</h4><br>
+          <h3>Empty HTML Elements</h3><br>
+          <p>HTML elements with no content are called empty elements.
+          <br><br>
+          The < br > tag defines a line break, and is an empty element without a closing tag.</p>
+          <h3>HTML is Not Case Sensitive</h3><br>
+          <p>HTML tags are not case sensitive: < P > means the same as < p >.
+          <br><br>
+          The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p><br>
+          <h3>HTML Tag Reference</h3><br>
+          <p>W3Schools' tag reference contains additional information about these tags and their attributes.</p>
+	        </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

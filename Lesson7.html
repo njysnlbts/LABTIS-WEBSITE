@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/1e/72/e1/1e72e177da44eac61f206607a320d927.png");
+  }
+  .name{
+    width: 90%;
+    margin: auto;
+  }
+  .webname{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 51, 117)
+  }
+  ul{
+    flex: 1;
+    text-align: left;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: x-large;
+    position: relative;
+  }
+  ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    transition: 0.5s;
+  }
+  ul li a:hover::after{
+    width: 100%;
+  }
+.container{
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  height: 90px;
+  background: #69c0d6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="name">
+      <div class="webname">
+          <h1>LabtisHTML</h1>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+              <a href="lessons list.html">Lessons</a>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Lesson 7: CSS Selectors</span></div>
+        <form action="#" style="font-family: sans-serif">
+          <p>A CSS selector selects the HTML element(s) you want to style.</p><br>
+          <h3>CSS Selectors</h3><br>
+          <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.
+          <br><br>
+          We can divide CSS selectors into five categories:
+          <bR><br>  
+          1. Simple selectors (select elements based on name, id, class)
+          <br><br>
+          2. Combinator selectors (select elements based on a specific relationship between them)
+          <br><br>
+          3. Pseudo-class selectors (select elements based on a certain state)
+          <br><br>
+          4. Pseudo-elements selectors (select and style a part of an element)
+          <br><br>
+          5. Attribute selectors (select elements based on an attribute or attribute value)
+          <br><br>  
+          This page will explain the most basic CSS selectors.</p><br>
+          <h3>The CSS element Selector</h3><br>
+          <p>The element selector selects HTML elements based on the element name.</p><br>
+          <h4>Example</h4><br>
+          <p>Here, all < p > elements on the page will be center-aligned, with a red text color.</p><br>
+          <h3>The CSS id Selector</h3><br>
+          <p>
+          The id selector uses the id attribute of an HTML element to select a specific element.
+          <br><br>
+          The id of an element is unique within a page, so the id selector is used to select one unique element!
+          <br><br>
+          To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p><br>
+          <h4>Example</h4><br>
+          <p>The CSS rule below will be applied to the HTML element with id="para1"
+          <br><br>  
+          <strong>Note:</strong>An id name cannot start with a number!
+          </p><br>
+          <h3>The CSS class Selector</h3><br>
+          <p>The class selector selects HTML elements with a specific class attribute.
+          <br><br>
+          To select elements with a specific class, write a period (.) character, followed by the class name.</p><br>
+          <h4>Example</h4><br>
+          <p>In this example all HTML elements with class="center" will be red and center-aligned.
+          <br><br>
+          You can also specify that only specific HTML elements should be affected by a class.</p><br>
+          <h4>Example</h4><br>
+          <p>In this example only < p > elements with class="center" will be red and center-aligned.
+          <br><br>
+          HTML elements can also refer to more than one class.</p><br>
+          <h4>Example</h4><br>
+          <p>In this example the <p> element will be styled according to class="center" and to class="large".
+          <br><br>
+          <strong>Note:</strong> A class name cannot start with a number! 
+          </p><br>
+          <h3>The CSS Universal Selector</h3><br>
+          <p>The universal selector (*) selects all HTML elements on the page.</p><br>
+          <h4>Example</h4><br>
+          <p>The CSS rule below will affect every HTML element on the page.</p><br>
+          <h3>The CSS Grouping Selector</h3><br>
+          <p>The grouping selector selects all the HTML elements with the same style definitions.
+          <br><br>
+          Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+          <br><br>
+          It will be better to group the selectors, to minimize the code.
+          <br><br>
+          To group selectors, separate each selector with a comma.
+          </p><br>
+          <h4>Example</h4><br>
+          <p>In this example we have grouped the selectors from the code above.</p>
+	        </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
